@@ -3,7 +3,15 @@
 
 ## env
 #### You must fill the following variables in your .env file:
-- Heroku_backend
+- divisionNo
+- chartId
+- selectYear
+- selectMonth
+- selectDay
+- gatherYear
+- gatherMonth
+- gatherDay
+- LINEBot_SERVERURL
 
 ## How to use
 <details>
