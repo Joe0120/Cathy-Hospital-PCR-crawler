@@ -26,4 +26,4 @@ def cgh_crawler():
     env_dict = get_env()
     result = get_cghPage(env_dict)
 
-    return jsonify({'result': result.encode().decode()})
+    return result

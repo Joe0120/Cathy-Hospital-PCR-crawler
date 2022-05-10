@@ -11,4 +11,5 @@ def get_cgh(env_dict):
 
 def notofy_LINEBot(result):
     res = requests.get(f'{LINEBot_SERVERURL}?result={result}')
+    print(res)
     return res

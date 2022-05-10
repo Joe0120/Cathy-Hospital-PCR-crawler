@@ -1,3 +1,4 @@
+import json
 import re
 from app import app, WEB_API, cgh_crawler
 from flask import jsonify
@@ -14,7 +15,7 @@ def index():
 @app.route('/cgh')
 def cgh():
     result = cgh_crawler.cgh_crawler()
-    return result, 200
+    return jsonify({'result': result}), 200
 
 
 @app.route('/check')
