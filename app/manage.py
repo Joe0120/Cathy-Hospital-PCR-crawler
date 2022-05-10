@@ -23,4 +23,4 @@ def check_result():
     result = cgh_crawler.cgh_crawler()
     if result != '報告尚未出來':
         WEB_API.notofy_LINEBot(result)
-    return result, 200
+    return jsonify({'result': result}), 200
